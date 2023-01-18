@@ -1,0 +1,658 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>vyRAL24</title>
+    <link rel="stylesheet" href="style.css" />
+    <!-- fonts -->
+    <link rel="stylesheet" href="https://use.typekit.net/ngt0cik.css" />
+    <!-- Link Swiper's CSS -->
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper/swiper-bundle.min.css"
+    />
+    <!--icons-->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.2/font/bootstrap-icons.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.2/font/bootstrap-icons.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+  </head>
+  <body onload="initHaptics()">
+    <section class="top-scroll-section transform-scroll-up">
+      <button class="scroll-to-top opacity-min-scroll">
+        <i class="fa-solid fa-circle-chevron-up"></i>
+      </button>
+    </section>
+    <section class="hamburger-menu">
+      <div class="hamburger-icon" id="iconid">
+        <div class="icon-1" id="a"></div>
+        <div class="icon-2" id="b"></div>
+        <div class="icon-3" id="c"></div>
+        <div class="clear"></div>
+      </div>
+
+      <nav class="ham-nav" id="ham-nav">
+        <ul class="ham-nav-ul display-min">
+          <a href="#services" onclick="closeSlideMenu()">Services</a>
+          <br />
+          <a href="#testimony" onclick="closeSlideMenu()">Testimony</a
+          ><br />
+          <a href="#"
+            ><button id="lets-talk" class="lets-talk">Let's Talk!</button></a
+          >
+        </ul>
+      </nav>
+
+      <div class="yellow" id="yellow"></div>
+    </section>
+    <section class="header navbar">
+      <nav class="navbar-nav">
+        <div class="navbar-div">
+          <ul class="navbar-links">
+            <a href="index.html">
+              <li class="navbar-li-items logo">vyRAL24</li>
+            </a>
+
+            <a href="#problem">
+              <li class="navbar-li-items">What's your problem</li>
+            </a>
+            <a href="#services">
+              <li class="navbar-li-items">Services</li>
+            </a>
+            <a href="#testimony">
+              <li class="navbar-li-items">Testimony</li>
+            </a>
+            <a href="#">
+              <button id="letstalk" class="lets-talk">Let's Talk!</button>
+            </a>
+          </ul>
+        </div>
+      </nav>
+    </section>
+    <section class="first-page">
+      <div class="first-page-container-1">
+        <div class="gif-box box">
+          <img src="images/Screenshot 2022-05-11 at 11.06.07 PM.png" alt="" />
+        </div>
+        <div class="txt-box box">
+          <div class="txt-box-header">
+            <p class="first-line accent-txt">Branding</p>
+            <p class="second-line accent-txt">Marketing</p>
+            <p class="third-line accent-txt">Sales Automation</p>
+            <p class="para-txts">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid,
+              placeat.
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="first-page-container-2">
+        <div class="about-us">
+          <h4>Who we are?</h4>
+          <p>
+            “ We are an India based agency that provides branding, marketing and sales for your business.”
+          </p>
+        </div>
+      </div>
+    </section>
+    <!-- <section class="second-page" id="problem">
+        <div class="second-page-header">
+            <h1>What's your problem?</h1>
+        </div>
+        <div class="cards-desktop">
+            <div class="card card1">
+                <div class="card-image-desktop">
+                    <img src="images/Screenshot 2022-05-15 at 10.16.47 AM.png" alt="">
+                </div>
+                <div class="card-txt">
+                    <h2>Lorem, ipsum dolor.</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ea asperiores perspiciatis dignissimos adipisci eaque. Neque?</p>
+                </div>
+            </div>
+            <div class="card card2">
+                <div class="card-image-desktop">
+                    <img src="images/Screenshot 2022-05-15 at 10.17.14 AM.png" alt="">
+                </div>
+                <div class="card-txt">
+                    <h2>Lorem, ipsum dolor.</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ea asperiores perspiciatis dignissimos adipisci eaque. Neque?</p>
+                </div>
+            </div>
+            <div class="card card3">
+                <div class="card-image-desktop">
+                    <img src="images/Screenshot 2022-05-15 at 10.17.33 AM.png" alt="">
+                </div>
+                <div class="card-txt">
+                    <h2>Lorem, ipsum dolor.</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ea asperiores perspiciatis dignissimos adipisci eaque. Neque?</p>
+                </div>
+            </div>
+        </div>
+        <div class="swiper mySwiper cards-mobile">
+            <div class="swiper-wrapper cards-mobile-container">
+                <div class="swiper-slide card">
+                    <div class="card-image-mobile">
+                        <img src="images/Screenshot 2022-05-15 at 10.16.47 AM.png" alt="">
+                    </div>
+                    <div class="card-txt">
+                        <h2>Lorem, ipsum dolor.</h2>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ea asperiores perspiciatis dignissimos adipisci eaque. Neque?</p>
+                    </div>
+                </div>
+                <div class="swiper-slide card">
+                    <div class="card-image-mobile">
+                        <img src="images/Screenshot 2022-05-15 at 10.17.14 AM.png" alt="">
+                    </div>
+                    <div class="card-txt">
+                        <h2>Lorem, ipsum dolor.</h2>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ea asperiores perspiciatis dignissimos adipisci eaque. Neque?</p>
+                    </div>
+                </div>
+                <div class="swiper-slide card">
+                    <div class="card-image-mobile">
+                        <img src="images/Screenshot 2022-05-15 at 10.17.33 AM.png" alt="">
+                    </div>
+                    <div class="card-txt">
+                        <h2>Lorem, ipsum dolor.</h2>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ea asperiores perspiciatis dignissimos adipisci eaque. Neque?</p>
+                    </div>
+                </div>
+            </div>
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-pagination"></div>
+        </div>
+    </section>  -->
+
+    <section class="second-page second-page-prototype" id="problem">
+      <div class="second-page-header">
+        <h1>Your Problems, Our Services.</h1>
+      </div>
+      <div class="cards-desktop">
+        <div class="card card1">
+          <div class="card-image-desktop">
+            <img src="images/Screenshot 2022-05-15 at 10.16.47 AM.png" alt="" />
+          </div>
+          <div class="card-txt">
+            <h2>Performance Marketing?</h2>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ea
+              asperiores perspiciatis dignissimos adipisci eaque. Neque?
+            </p>
+          </div>
+          <!-- <div class="button">
+                    <a href="#">
+                        <button>Lorem ipsum dolor sit.</button>
+                    </a>
+                </div> -->
+        </div>
+        <div class="card card2">
+          <div class="card-image-desktop">
+            <img src="images/Screenshot 2022-05-15 at 10.17.14 AM.png" alt="" />
+          </div>
+          <div class="card-txt">
+            <h2>Marketing Strategy?</h2>
+            <p>
+              Together with us, develop a marketing strategy tailored to your company's needs.
+            </p>
+          </div>
+          <!-- <div class="button">
+                    <a href="#">
+                        <button>Lorem ipsum dolor sit.</button>
+                    </a>
+
+                </div> -->
+        </div>
+        <div class="card card3">
+          <div class="card-image-desktop">
+            <img src="images/Screenshot 2022-05-15 at 10.17.33 AM.png" alt="" />
+          </div>
+          <div class="card-txt">
+            <h2>Google PPC Campaigns?</h2>
+            <p>
+              Utilize Google Ads to increase your ROI by displaying advertisements to your target markets on a global or national scale.
+            </p>
+          </div>
+          <!-- <div class="button">
+                    <a href="#">
+                        <button>Lorem ipsum dolor sit.</button>
+                    </a>
+                </div> -->
+        </div>
+        <div class="card card4">
+          <div class="card-image-desktop">
+            <img src="images/Screenshot 2022-05-15 at 10.17.33 AM.png" alt="" />
+          </div>
+
+          <div class="card-txt">
+            <h2>Website Development?</h2>
+            <p>
+              Increase the public's knowledge of your brand via web sites, landing pages, etc. it’s a cost-effective way to reach people who are keen to your business
+            </p>
+          </div>
+          <!-- <div class="button">
+                    <a href="#">
+                        <button>Lorem ipsum dolor sit.</button>
+                    </a>
+                </div> -->
+        </div>
+        <div class="card card5">
+          <div class="card-image-desktop">
+            <img src="images/Screenshot 2022-05-15 at 10.16.47 AM.png" alt="" />
+          </div>
+          <div class="card-txt">
+            <h2>Social Media Marketing?</h2>
+            <p>
+              Creating engaging content for your audience can help you achieve your social marketing goals and business objectives
+            </p>
+          </div>
+          <!-- <div class="button">
+                    <a href="#">
+                        <button>Lorem ipsum dolor sit.</button>
+                    </a>
+
+                </div> -->
+        </div>
+        <div class="card card6">
+          <div class="card-image-desktop">
+            <img src="images/Screenshot 2022-05-15 at 10.17.14 AM.png" alt="" />
+          </div>
+
+          <div class="card-txt">
+            <h2>Influence Marketing?</h2>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ea
+              asperiores perspiciatis dignissimos adipisci eaque. Neque?
+            </p>
+          </div>
+          <!-- <div class="button">
+                    <a href="#">
+                        <button>Lorem ipsum dolor sit.</button>
+                    </a>
+                </div> -->
+        </div>
+      </div>
+      <div class="swiper mySwiper cards-mobile cards-mobile-1">
+        <div class="swiper-wrapper cards-mobile-container">
+          <div class="swiper-slide card">
+            <div class="card-image-mobile">
+              <img
+                src="images/Screenshot 2022-05-15 at 10.16.47 AM.png"
+                alt=""
+              />
+            </div>
+            <div class="card-txt">
+              <h2>Performance Marketing?</h2>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ea
+                asperiores perspiciatis dignissimos adipisci eaque. Neque?
+              </p>
+            </div>
+          </div>
+          <div class="swiper-slide card">
+            <div class="card-image-mobile">
+              <img
+                src="images/Screenshot 2022-05-15 at 10.17.14 AM.png"
+                alt=""
+              />
+            </div>
+            <div class="card-txt">
+              <h2>Marketing Strategy?</h2>
+              <p>
+                Together with us, develop a marketing strategy tailored to your company's needs.
+              </p>
+            </div>
+          </div>
+          <div class="swiper-slide card">
+            <div class="card-image-mobile">
+              <img
+                src="images/Screenshot 2022-05-15 at 10.17.33 AM.png"
+                alt=""
+              />
+            </div>
+            <div class="card-txt">
+              <h2>Google PPC Campaigns?</h2>
+              <p>
+                Utilize Google Ads to increase your ROI by displaying advertisements to your target markets on a global or national scale.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-pagination"></div>
+      </div>
+      <div class="swiper mySwiper cards-mobile cards-mobile-2">
+        <div class="swiper-wrapper cards-mobile-container">
+          <div class="swiper-slide card">
+            <div class="card-image-mobile">
+              <img
+                src="images/Screenshot 2022-05-15 at 10.17.33 AM.png"
+                alt=""
+              />
+            </div>
+            <div class="card-txt">
+              <h2>Website Development?</h2>
+              <p>
+                Increase the public's knowledge of your brand via web sites, landing pages, etc. it’s a cost-effective way to reach people who are keen to your business
+              </p>
+            </div>
+          </div>
+          <div class="swiper-slide card">
+            <div class="card-image-mobile">
+              <img
+                src="images/Screenshot 2022-05-15 at 10.16.47 AM.png"
+                alt=""
+              />
+            </div>
+            <div class="card-txt">
+              <h2>Social Media Marketing?</h2>
+              <p>
+                Creating engaging content for your audience can help you achieve your social marketing goals and business objectives
+              </p>
+            </div>
+          </div>
+          <div class="swiper-slide card">
+            <div class="card-image-mobile">
+              <img
+                src="images/Screenshot 2022-05-15 at 10.17.14 AM.png"
+                alt=""
+              />
+            </div>
+            <div class="card-txt">
+              <h2>Influence Marketing?</h2>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ea
+                asperiores perspiciatis dignissimos adipisci eaque. Neque?
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-pagination"></div>
+      </div>
+    </section>
+    <!-- <section class="third-page" id="services">
+        <h1>Our Services</h1>
+        <div class="services-desktop">
+            <div class="services-desktop-container">
+                <div class="service-cards-1">
+                    <div class="fact">
+                        <i class="fa fa-rocket" ></i>
+                        <div class="services-card-txt">
+                            <h4>marketing strategy</h4>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat earum atque vero, officia ullam at!</p>
+                        </div>
+                    </div>
+                    <div class="fact">
+                        <i class='bi bi-code-square' ></i>
+                        <div class="services-card-txt">
+                            <h4>website development</h4>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat earum atque vero, officia ullam at!</p>
+                        </div>
+                    </div>
+                    <div class="fact">
+                        <i class="fa fa-instagram"></i>
+                        <div class="services-card-txt">
+                            <h4> social media marketing</h4>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat earum atque vero, officia ullam at!</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="service-cards-2">
+                    <div class="fact">
+                        <i class="fa fa-google"></i>
+                        <div class="services-card-txt">
+                            <h4>Google PPC Campaigns</h4>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat earum atque vero, officia ullam at!</p>
+                        </div>
+                    </div>
+                    <div class="fact">
+                        <i class='bi bi-emoji-heart-eyes-fill' ></i>
+                        <div class="services-card-txt">
+                            <h4>influencer marketing</h4>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat earum atque vero, officia ullam at!</p>
+                        </div>
+                    </div>
+                    <div class="fact">
+                        <i class='bi bi-activity' ></i>
+                        <div class="services-card-txt">
+                            <h4>Performance Marketing</h4>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat earum atque vero, officia ullam at!</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>  
+        
+    </section> -->
+
+    <section class="fourth-page">
+      <h1>What makes us different</h1>
+      <div class="main-container">
+        <div class="main-txts">
+          <button class="main-card main-card1">
+            <i class="bi bi-shield-fill-check icon1 active-main-card"></i>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi,
+              assumenda!
+            </p>
+          </button>
+          <button class="main-card main-card2 opacity-low">
+            <i class="bi bi-shield-fill-check icon2"></i>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+              Repellat, officia?
+            </p>
+          </button>
+          <button class="main-card main-card3 opacity-low">
+            <i class="bi bi-shield-fill-check icon3"></i>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi,
+              assumenda!
+            </p>
+          </button>
+          <button class="main-card main-card4 opacity-low">
+            <i class="bi bi-shield-fill-check icon4"></i>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi,
+              assumenda!
+            </p>
+          </button>
+          <button class="main-card main-card5 opacity-low">
+            <i class="bi bi-shield-fill-check icon5"></i>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi,
+              assumenda!
+            </p>
+          </button>
+        </div>
+        <div class="main-images">
+          <img class="mi1" src="images/wmud1.png" alt="" />
+          <img class="mi2 opacity-min" src="images/wmud2.png" alt="" />
+          <img class="mi3 opacity-min" src="images/wmud3.png" alt="" />
+          <img class="mi4 opacity-min" src="images/wmud4.png" alt="" />
+          <img class="mi5 opacity-min" src="images/wmud2.png" alt="" />
+        </div>
+      </div>
+    </section>
+    <section class="fifth-page" id="testimony">
+      <div class="sp-h">
+        <!-- <h1>Don't just take our words</h1> -->
+        <h1>Here's from Our Customers</h1>
+      </div>
+
+      <div class="swiper mySwiper tt-main-container">
+        <div class="swiper-wrapper tt-sub-container-1">
+          <div class="swiper-slide tt1 tt">
+            <div class="tt-txt">
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor
+                soluta sequi qui autem vel tempora voluptatem nulla, atque
+                corrupti libero?
+              </p>
+              <p>~ Name</p>
+            </div>
+            <div class="tvid1 ttvid">
+              <img src="images/wmud1.png" alt="" />
+            </div>
+          </div>
+          <div class="swiper-slide tt2 tt">
+            <div class="tt-txt">
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor
+                soluta sequi qui autem vel tempora voluptatem nulla, atque
+                corrupti libero?
+              </p>
+              <p>~ Name</p>
+            </div>
+            <div class="tvid2 ttvid">
+              <img src="images/wmud2.png" alt="" />
+            </div>
+          </div>
+          <div class="swiper-slide tt3 tt">
+            <div class="tt-txt">
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor
+                soluta sequi qui autem vel tempora voluptatem nulla, atque
+                corrupti libero?
+              </p>
+              <p>~ Name</p>
+            </div>
+            <div class="tvid3 ttvid">
+              <img src="images/wmud3.png" alt="" />
+            </div>
+          </div>
+        </div>
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-pagination"></div>
+      </div>
+    </section>
+    <!-- for form  -->
+    <section class="bg-modal">
+      <div class="modal-content">
+        <div class="close-modal">+</div>
+
+        <lottie-player
+          class="lottie"
+          src="https://assets4.lottiefiles.com/packages/lf20_axvqpuzs.json"
+          background="transparent"
+          speed="1"
+          loop
+          autoplay
+        ></lottie-player>
+        <form
+          id="my-form"
+          method="POST"
+          action="https://docs.google.com/forms/u/0/d/e/1FAIpQLSd59XJ1zcl3HxnVrgfC2lr1UiakbYWBQZlKfAxHDzKzTBVGtA/formResponse"
+        >
+          <input
+            class="input"
+            type="text"
+            required
+            name="entry.53374688"
+            id="name"
+            placeholder="Enter your full name*"
+          />
+          <input
+            class="input"
+            type="email"
+            required
+            name="entry.96509955"
+            id="email"
+            placeholder="Enter your E-mail id*"
+          />
+          <input
+            type="tel"
+            required
+            name="entry.418875065"
+            id="number"
+            placeholder="Enter Phone number*"
+          />
+          <textarea
+            placeholder="Your Message"
+            name="entry.99822491"
+            id="message"
+            cols="17"
+            rows="7"
+          ></textarea>
+
+          <button id="submit-btn" type="submit">Submit</button>
+          <div id="status"></div>
+        </form>
+      </div>
+    </section>
+    <section class="sixth-page">
+      <div class="contact-us-container">
+        <div class="container-left-contact-us">
+          <h2>Want to elevate your brand experience? Get in touch.</h2>
+          <p>
+            “Just bring your creative business idea or the Communication
+            problem. Let's solve them together.”
+          </p>
+        </div>
+        <div class="container-right-contact-us">
+          <button id="contact-us-btn" class="contact-us-btn">
+            CONTACT US!
+          </button>
+        </div>
+      </div>
+    </section>
+    <!-- footer  -->
+    <section class="footer">
+      <div class="ufc">
+        <ul class="ufcul">
+          <li>VYRAL(logo)20XX</li>
+          <div class="li-rest">
+            <li><a href="#">About</a></li>
+            <li><a href="#">Privacy Policy</a></li>
+            <li><a href="#">T&C</a></li>
+          </div>
+        </ul>
+      </div>
+      <div class="lfc">
+        <a href="#"><i class="bi bi-facebook"></i></a>
+        <a href="#"><i class="bi bi-linkedin"></i></a>
+        <a href="#"><i class="bi bi-instagram"></i></a>
+      </div>
+    </section>
+
+    <script src="script.js"></script>
+    <!-- Swiper JS -->
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <!-- lottie player  -->
+    <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+    <!-- Initialize Swiper -->
+    <script>
+      var swiper = new Swiper('.mySwiper', {
+        slidesPerView: 1,
+        spaceBetween: 1,
+        loop: true,
+        pagination: {
+          el: '.swiper-pagination',
+          clickable: true,
+        },
+        navigation: {
+          nextEl: '.swiper-button-next',
+          prevEl: '.swiper-button-prev',
+        },
+      });
+    </script>
+  </body>
+</html>
