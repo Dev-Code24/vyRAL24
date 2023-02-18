@@ -22,7 +22,7 @@ var clicked = false;
 mC1.addEventListener("click", function(){
     clicked = true;
     if(clicked){
-        // navigator.vibrate(60)
+
         i1.classList.add(`active-main-card`);
         i2.classList.remove(`active-main-card`);
         i3.classList.remove(`active-main-card`);
@@ -44,7 +44,7 @@ mC1.addEventListener("click", function(){
 mC2.addEventListener("click", function(){
     clicked = true;
     if(clicked){
-        // navigator.vibrate(60)
+
         i2.classList.add(`active-main-card`);
         i1.classList.remove(`active-main-card`);
         i3.classList.remove(`active-main-card`);
@@ -66,7 +66,7 @@ mC2.addEventListener("click", function(){
 mC3.addEventListener("click", function(){
     clicked = true;
     if(clicked){
-        // navigator.vibrate(60)
+
         i3.classList.add(`active-main-card`);
         i1.classList.remove(`active-main-card`);
         i2.classList.remove(`active-main-card`);
@@ -88,7 +88,7 @@ mC3.addEventListener("click", function(){
 mC4.addEventListener("click", function(){
     clicked = true;
     if(clicked){
-        // navigator.vibrate(60)
+
         i4.classList.add(`active-main-card`);
         i1.classList.remove(`active-main-card`);
         i2.classList.remove(`active-main-card`);
@@ -110,7 +110,7 @@ mC4.addEventListener("click", function(){
 mC5.addEventListener("click", function(){
     clicked = true;
     if(clicked){
-        // navigator.vibrate(60)
+
         i5.classList.add(`active-main-card`);
         i1.classList.remove(`active-main-card`);
         i2.classList.remove(`active-main-card`);
@@ -135,20 +135,20 @@ mC5.addEventListener("click", function(){
     document.getElementById("contact-us-btn").addEventListener(`click`,
     function(){
         document.querySelector(`.bg-modal`).style.display = `flex`;
-        // navigator.vibrate(60)
+
     } )
 
     document.getElementById("lets-talk").addEventListener   (`click` ,     function(){
         document.querySelector(`.bg-modal`).style.display = `flex`;
-        // navigator.vibrate(60)
+
     });
     document.getElementById("letstalk").addEventListener   (`click` ,  function(){
         document.querySelector(`.bg-modal`).style.display = `flex`;
-        // navigator.vibrate(60)
+
     });
     document.querySelector(`.close-modal`).addEventListener(`click` ,   function(){
         document.querySelector(`.bg-modal`).style.display = `none`;
-        // navigator.vibrate(60)
+
     });
 
     document.addEventListener(`keyup`, e => {
@@ -186,7 +186,6 @@ window.addEventListener("DOMContentLoaded", function () {
   
     form.addEventListener("submit", function (ev) {
       ev.preventDefault();
-      navigator.vibrate(80)
       var data = new FormData(form);
     //   ajax(form.method, form.action, data, success, error);
     var xhr = new XMLHttpRequest();
@@ -222,7 +221,7 @@ var yellow = document.getElementById("yellow");
 
 iconid.addEventListener('click', function() {
     console.log(`clicked`)
-    // navigator.vibrate(60)
+
   icon1.classList.toggle('a');
   icon2.classList.toggle('c');
   icon3.classList.toggle('b');
@@ -242,7 +241,7 @@ scrollbtn.addEventListener(`click` , () => {
     document.documentElement.scrollTop = 0;
     document.body.scrollTop = 0;
     scrollbtn.classList.add(`scale-transform-scroll`);
-    // navigator.vibrate(60);
+;
 
 })
 document.addEventListener(`scroll` , () =>{
@@ -270,16 +269,3 @@ viewport.setAttribute("content", viewport.content + ", height=" + window.innerHe
 });
 
 
-// for the buttons in card page 2
-// const cardbtn1  = document.getElementById(`card-btn1`);
-// const cardbtn2  = document.getElementById(`card-btn2`);
-// const cardbtn3  = document.getElementById(`card-btn3`);
-// cardbtn1.addEventListener(`click` , () => {
-    // navigator.vibrate(60)
-// })
-// cardbtn2.addEventListener(`click` , () => {
-//     navigator.vibrate(60)
-// })
-// cardbtn3.addEventListener(`click` , () => {
-//     navigator.vibrate(60)
-// })
